@@ -1,0 +1,482 @@
+@font-face {
+  font-family: "Sahel";
+  font-weight: normal;
+  src: url("/fonts/Sahel/Sahel.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sahel";
+  font-weight: 200;
+  src: url("/fonts/Sahel/Sahel-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sahel";
+  font-weight: bold;
+  src: url("/fonts/Sahel/Sahel-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Vazir";
+  font-weight: normal;
+  src: url("/fonts/Vazir/Vazir-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Vazir";
+  font-weight: 200;
+  src: url("/fonts/Vazir/Vazir-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Vazir";
+  font-weight: bold;
+  src: url("/fonts/Vazir/Vazir-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-weight: normal;
+  src: url("/fonts/Shabnam/Shabnam.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-weight: 200;
+  src: url("/fonts/Shabnam/Shabnam-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-weight: bold;
+  src: url("/fonts/Shabnam/Shabnam-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: normal;
+  src: url("/fonts/Estedad/Estedad-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: 200;
+  src: url("/fonts/Estedad/Estedad-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: bold;
+  src: url("/fonts/Estedad/Estedad-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: url("/fonts/Yekan/Yekan.woff") format("woff");
+}
+:root {
+  --black: #1f1f1f;
+  --white: #fff;
+  --yellow: #ffc554;
+  --deep-yellow: #ffc727;
+  --bg-yellow: #fffaf1;
+  --btn-yellow: #fff4d4;
+  --footer-yellow: #fff9e9;
+  --grey: #737373;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.2s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazir";
+}
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+span {
+  color: var(--yellow);
+}
+header {
+}
+.header {
+  display: flex;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  background-color: var(--white);
+  padding: 0 8rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: var(--transition);
+}
+
+.navbar a:not(:last-child) {
+  margin-left: 0.8rem;
+}
+.navbar-items a:hover {
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+.navbar-items .btn {
+  padding: 0.8rem;
+  color: var(--yellow);
+  text-decoration: none;
+  margin-right: 2rem;
+  border-radius: 7px;
+  background-color: var(--btn-yellow);
+}
+.navbar-items .btn:hover {
+  box-shadow: var(--box-shadow);
+}
+.container {
+  max-width: 80rem;
+}
+.Introduction {
+  padding-top: 16rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.image {
+  width: 100%;
+}
+.Int-right {
+  max-width: 37.5rem;
+}
+.Int-right h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.Int-right p {
+  color: gray;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.Int-right a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--yellow);
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  transition: var(--transition);
+}
+.Int-right a:hover {
+  box-shadow: var(--box-shadow);
+  transform: translateY(-5px);
+}
+.Int-left {
+  margin-top: -8rem;
+}
+.about {
+  padding-top: 4rem;
+  background-color: var(--bg-yellow);
+  padding-bottom: 4rem;
+}
+.about-up {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.about-up h2 {
+  font-size: 2.2rem;
+}
+.about-up p {
+  font-size: 1.16rem;
+  color: var(--grey);
+  margin-top: 1rem;
+}
+.about-dn {
+  display: flex;
+  gap: 1rem;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1.5rem 1rem;
+  transition: var(--transition);
+}
+.box:hover {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+}
+.more {
+  margin-bottom: 1rem;
+  height: 3.8rem;
+}
+.about-dn h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-dn p {
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+.about-dn a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1f1f1f;
+  display: flex;
+  text-align: center;
+  gap: 0.2rem;
+}
+.about-2 {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.about2-right {
+  max-width: 37rem;
+}
+.about2-right img {
+  width: 100%;
+}
+.about2-left {
+  max-width: 33rem;
+}
+.about2-left h3,
+.about3-right h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.about2-left p,
+.about3-right p {
+  color: gray;
+  margin-bottom: 2rem;
+}
+.about2-left a,
+.about3-right a {
+  text-decoration: none;
+  color: var(--yellow);
+  background-color: var(--btn-yellow);
+  padding: 0.6rem;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+.about2-left a:hover,
+.about3-right a:hover {
+  box-shadow: var(--box-shadow);
+}
+.about-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.about3-right {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.about-4 {
+  background-color: var(--yellow);
+  max-width: 80rem;
+  max-height: 28rem;
+  position: relative;
+  padding: 13rem 10rem;
+  border-radius: 10px;
+  max-width: 80rem;
+  margin-bottom: 8rem;
+}
+.about4-content {
+  display: flex;
+  position: absolute;
+  padding: 1rem;
+  gap: 6rem;
+  justify-content: space-between;
+  margin: -18rem -2rem 0rem 1rem;
+}
+.about4-left {
+  margin-top: 8rem;
+  max-width: 36rem;
+}
+
+.about4-left h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.about4-left p {
+  color: #1f1f1f;
+  margin-bottom: 2rem;
+}
+.about4-left-image img {
+  margin-left: 1rem;
+}
+footer {
+  background-color: var(--footer-yellow);
+}
+.fottterr {
+  margin-right: 1rem;
+}
+.foter-content {
+  display: flex;
+  padding: 6rem 0rem;
+  justify-content: space-between;
+}
+.foter-content1 span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.foter-content1 p {
+  color: gray;
+}
+footer h4 {
+  margin-bottom: 1rem;
+}
+.foter-content2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  color: var(--grey);
+}
+.email {
+  display: flex;
+  flex-direction: row;
+  color: var(--grey);
+}
+.foter-content2 img {
+  font-size: 1rem;
+}
+.foter-content3,
+.foter-content4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.foter-content3 a,
+.foter-content4 a,
+.foter-content5 a {
+  text-decoration: none;
+  color: var(--grey);
+}
+.foter-content5 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.inestagram,
+.facebook,
+.toweter {
+  display: flex;
+  flex-direction: row;
+}
+
+/* respansive */
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 992px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .Introduction {
+    padding-top: 11rem;
+  }
+  .Int-right {
+    max-width: 20rem;
+    padding-right: 2rem;
+  }
+  .Int-right h1 {
+    font-size: 2.5rem;
+  }
+  .Int-left {
+    margin-top: -2rem;
+  }
+
+  .Int-left .image {
+    max-width: 35rem;
+  }
+  .Int-left .image img {
+    max-width: 100%;
+  }
+  .about4-left {
+    margin-top: 6rem;
+  }
+  .about4-content {
+    margin: -18rem -10rem 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+  .navbar-items {
+    display: none;
+  }
+  .Introduction {
+    flex-wrap: wrap;
+  }
+  .Int-right {
+    max-width: 50rem;
+    padding-right: 2rem;
+  }
+  .Int-left {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Int-left .image {
+    max-width: 26rem;
+  }
+  .about-3 {
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+  .about3-left {
+    margin-top: 2rem;
+  }
+  .about4-content {
+    margin: -18rem -8rem 0rem 0rem;
+    gap: 2rem;
+  }
+  .about4-right img {
+    max-width: 8rem;
+    margin-top: 8rem;
+  }
+}
+.foter-content {
+  flex-wrap: wrap;
+}
+.fottterr {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  * {
+    flex-wrap: wrap;
+  }
+}

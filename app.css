@@ -358,6 +358,7 @@ footer h4 {
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .address {
   display: flex;
   flex-direction: row;
